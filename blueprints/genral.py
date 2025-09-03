@@ -4,5 +4,9 @@ genral = Blueprint("general", __name__)
 
 
 @genral.route('/')
-def hello_world():
+def main():
     return 'this is main page'
+
+@genral.route('/about')
+def about():
+    return 'about us'
